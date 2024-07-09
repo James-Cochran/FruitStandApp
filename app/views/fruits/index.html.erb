@@ -1,0 +1,8 @@
+<h1>List of Fruits</h1>
+
+<ul>
+  <li><strong>Name</strong> | <strong>Quantity</strong> | <strong>Is Citrus</strong></li>
+  <% @fruits.each do |fruit| %>
+    <li><%= fruit.name %> | <%= fruit.quantity %> | <%= fruit.is_citrus %></li>
+  <% end %>
+</ul>

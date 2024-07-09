@@ -1,0 +1,13 @@
+<h1>Fruit Stand Details</h1>
+<p>Name: <%= @fruit_stand.name %></p>
+<p>Number of Employees: <%= @fruit_stand.number_of_employees %></p>
+<p>In Stock: <%= @fruit_stand.in_stock %></p>
+
+<p>Fruits:</p>
+
+<ul>
+  <li><strong>Name</strong> | <strong>Quantity</strong> | <strong>Is Citrus</strong></li>
+  <% @fruits.each do |fruit| %>
+        <li><%= fruit.name %> | <%= fruit.quantity %> | <%= fruit.is_citrus %></li>
+  <% end %>
+</ul>
